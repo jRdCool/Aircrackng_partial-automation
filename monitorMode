@@ -1,0 +1,16 @@
+#!/bin/sh
+
+
+
+
+echo "Enter Interface"
+read INTERFACE
+
+echo "Enter Channel Number (1-11)"
+read CHANNEL
+
+ifconfig $INTERFACE down
+iwconfig $INTERFACE mode monitor
+iwconfig $INTERFACE ch $CHANNEL
+rfkill unblock all
+ifconfig $INTERFACE up
