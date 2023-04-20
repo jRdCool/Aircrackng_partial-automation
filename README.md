@@ -6,6 +6,8 @@ If you need help with running the script as always you can use --help
 
 requirements: aircrack-ng suite of tools
 
+Recomended: Before running crack.sh run monitorMode to get the wireless interface set into the correct mode to preform the attack
+
 Useage: sudo ./crach.sh [bssid] [smac] [file name] [interface] [attack type(0-3)] [dictionary file (type 3 attack only)]
 
 
